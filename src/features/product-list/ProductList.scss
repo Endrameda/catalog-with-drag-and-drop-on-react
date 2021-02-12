@@ -1,0 +1,72 @@
+.product-list {
+  $self: &;
+
+  &__header {
+    margin-bottom: 10px;
+    display: none;
+
+    &-name {
+      flex: 0 0 calc(40% + 120px);
+    }
+
+    &-desc {
+      flex: 0 0 30%;
+    }
+
+    &-price {
+      flex: 0 0 30%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &.list {
+    #{$self}__inner {
+      flex-direction: column;
+    }
+
+    #{$self}__header {
+      display: flex;
+    }
+
+    .product {
+      width: 100%;
+
+      &__inner {
+        display: flex;
+        min-height: 8em;
+        padding-bottom: 0;
+      }
+
+      &__img {
+        flex: 0 0 120px;
+        height: auto;
+        margin-bottom: 0;
+      }
+
+      &__name {
+        flex: 0 0 40%;
+        padding-right: 10px;
+        padding-left: 0;
+        padding-top: 10px;
+      }
+
+      &__desc {
+        flex: 0 0 30%;
+        padding-right: 10px;
+        padding-left: 0;
+        padding-top: 10px;
+      }
+
+      &__price {
+        flex: 0 0 30%;
+        padding-left: 0;
+        padding-top: 10px;
+      }
+    }
+  }
+}

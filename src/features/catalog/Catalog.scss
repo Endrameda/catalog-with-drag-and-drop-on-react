@@ -1,0 +1,42 @@
+.catalog {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    height: 25px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__change-list {
+    width: 25px;
+    height: 25px;
+
+    @media all and (max-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__body {
+    background-color: lightgray;
+    flex: 1 1 auto;
+    padding: 2em 2em 0;
+    overflow: auto;
+
+    @media all and (max-width: 1024px) {
+      padding: 1.5em;
+    }
+
+    @media all and (max-width: 960px) {
+      padding: 1em;
+    }
+  }
+}
