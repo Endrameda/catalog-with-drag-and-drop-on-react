@@ -2,6 +2,7 @@
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  height: 80vh;
   border-radius: 0.5em;
   overflow: hidden;
   display: flex;
@@ -28,7 +29,7 @@
   &__body {
     background-color: lightgray;
     flex: 1 1 auto;
-    padding: 2em 2em 0;
+    padding: 2em;
     overflow: auto;
 
     @media all and (max-width: 1024px) {
